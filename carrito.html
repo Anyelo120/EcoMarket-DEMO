@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito de compras | EcoMarket Chile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Carrito de compras de EcoMarket Chile. Revisa los productos ecológicos que has seleccionado antes de finalizar tu pedido.">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html">EcoMarket <span>Chile</span></a>
+        </div>
+
+        <form class="search-bar" action="tienda.html" method="get">
+            <input type="text" name="q" placeholder="Buscar productos ecológicos...">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li class="has-submenu">
+                    <a href="categorias.html">Categorías</a>
+                    <ul class="submenu">
+                        <li><a href="categoria-cuidado-personal.html">Cuidado personal</a></li>
+                        <li><a href="categoria-hogar-limpieza.html">Hogar y limpieza</a></li>
+                        <li><a href="categoria-cocina.html">Cocina reutilizable</a></li>
+                        <li><a href="categoria-ofertas.html">Ofertas eco</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons">
+            <a href="cuenta.html" class="icon-link" aria-label="Cuenta de usuario">
+                🧑
+            </a>
+            <a href="carrito.html" class="icon-link" aria-label="Carrito de compras">
+                🛒 <span class="cart-count">3</span>
+            </a>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <span><a href="index.html">Inicio</a></span>
+        <span>›</span>
+        <span><a href="tienda.html">Tienda</a></span>
+        <span>›</span>
+        <span>Carrito de compras</span>
+    </nav>
+
+    <main class="cart">
+        <section class="cart-layout">
+            <section class="cart-items">
+                <header class="cart-header-row">
+                    <div class="cart-header-product">Producto</div>
+                    <div class="cart-header-price">Precio</div>
+                    <div class="cart-header-qty">Cantidad</div>
+                    <div class="cart-header-subtotal">Subtotal</div>
+                    <div class="cart-header-remove">Quitar</div>
+                </header>
+
+                <article class="cart-item">
+                    <div class="cart-item-main">
+                        <div class="cart-item-image">
+                            <img src="img/producto-1.jpg" alt="Cepillo de dientes de bambú">
+                        </div>
+                        <div class="cart-item-info">
+                            <h2 class="cart-item-name">Cepillo de dientes de bambú</h2>
+                            <p class="cart-item-tag">Biodegradable · Cuidado personal</p>
+                            <a href="detalle-producto-1.html" class="cart-item-link">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="cart-item-price">
+                        <span>$3.990</span>
+                    </div>
+                    <div class="cart-item-qty">
+                        <input type="number" value="2" min="1">
+                    </div>
+                    <div class="cart-item-subtotal">
+                        <span>$7.980</span>
+                    </div>
+                    <div class="cart-item-remove">
+                        <button type="button" class="cart-remove-btn">✕</button>
+                    </div>
+                </article>
+
+                <article class="cart-item">
+                    <div class="cart-item-main">
+                        <div class="cart-item-image">
+                            <img src="img/producto-2.jpg" alt="Pack bolsas reutilizables de algodón">
+                        </div>
+                        <div class="cart-item-info">
+                            <h2 class="cart-item-name">Pack bolsas reutilizables de algodón</h2>
+                            <p class="cart-item-tag">Reutilizable · Hábitos</p>
+                            <a href="detalle-producto-2.html" class="cart-item-link">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="cart-item-price">
+                        <span>$7.490</span>
+                    </div>
+                    <div class="cart-item-qty">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="cart-item-subtotal">
+                        <span>$7.490</span>
+                    </div>
+                    <div class="cart-item-remove">
+                        <button type="button" class="cart-remove-btn">✕</button>
+                    </div>
+                </article>
+
+                <article class="cart-item">
+                    <div class="cart-item-main">
+                        <div class="cart-item-image">
+                            <img src="img/producto-3.jpg" alt="Detergente ecológico concentrado">
+                        </div>
+                        <div class="cart-item-info">
+                            <h2 class="cart-item-name">Detergente ecológico concentrado</h2>
+                            <p class="cart-item-tag">Menos químicos · Hogar</p>
+                            <a href="detalle-producto-3.html" class="cart-item-link">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="cart-item-price">
+                        <span>$5.990</span>
+                    </div>
+                    <div class="cart-item-qty">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="cart-item-subtotal">
+                        <span>$5.990</span>
+                    </div>
+                    <div class="cart-item-remove">
+                        <button type="button" class="cart-remove-btn">✕</button>
+                    </div>
+                </article>
+
+                <div class="cart-bottom-actions">
+                    <a href="tienda.html" class="btn btn-secondary cart-continue">
+                        Seguir comprando
+                    </a>
+                    <button type="button" class="btn btn-outline cart-update">
+                        Actualizar cantidades
+                    </button>
+                </div>
+            </section>
+
+            <aside class="cart-summary">
+                <h2>Resumen de tu pedido</h2>
+
+                <div class="cart-summary-row">
+                    <span>Subtotal productos</span>
+                    <span>$21.460</span>
+                </div>
+                <div class="cart-summary-row">
+                    <span>Descuento</span>
+                    <span>$0</span>
+                </div>
+                <div class="cart-summary-row">
+                    <span>Envío estimado</span>
+                    <span>$3.500</span>
+                </div>
+
+                <div class="cart-summary-total">
+                    <span>Total estimado</span>
+                    <span>$24.960</span>
+                </div>
+
+                <p class="cart-summary-note">
+                    El costo de envío puede variar según tu dirección. Podrás revisarlo en el paso de checkout.
+                </p>
+
+                <a href="checkout.html" class="btn btn-primary cart-checkout-btn">
+                    Finalizar compra
+                </a>
+
+                <p class="cart-summary-secure">
+                    Compra segura · Tus datos son tratados de forma responsable.
+                </p>
+            </aside>
+        </section>
+
+        <section class="cart-eco-info">
+            <div class="cart-eco-inner">
+                <h2>Tu carrito y el impacto sustentable</h2>
+                <p>
+                    Al elegir productos reutilizables, biodegradables y con envases reducidos,
+                    contribuyes a disminuir la cantidad de residuos generados por tu consumo diario.
+                </p>
+                <p>
+                    Revisa si hay productos con versiones de mayor duración o packs que reduzcan el número de envases
+                    y traslados necesarios.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>EcoMarket Chile</h3>
+                <p>Productos sustentables para un hogar más consciente.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terminos.html">Términos y condiciones</a></li>
+                    <li><a href="privacidad.html">Política de privacidad</a></li>
+                    <li><a href="devoluciones.html">Política de devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>Correo: contacto@ecomarketchile.cl</p>
+                <p>Chile</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 EcoMarket Chile. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

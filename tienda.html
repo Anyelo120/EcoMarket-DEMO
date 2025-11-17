@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda | EcoMarket Chile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Catálogo de productos sustentables de EcoMarket Chile. Encuentra alternativas ecológicas para tu día a día.">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html">EcoMarket <span>Chile</span></a>
+        </div>
+
+        <form class="search-bar" action="tienda.html" method="get">
+            <input type="text" name="q" placeholder="Buscar productos ecológicos...">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html" class="active">Tienda</a></li>
+                <li class="has-submenu">
+                    <a href="categorias.html">Categorías</a>
+                    <ul class="submenu">
+                        <li><a href="categoria-cuidado-personal.html">Cuidado personal</a></li>
+                        <li><a href="categoria-hogar-limpieza.html">Hogar y limpieza</a></li>
+                        <li><a href="categoria-cocina.html">Cocina reutilizable</a></li>
+                        <li><a href="categoria-ofertas.html">Ofertas eco</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons">
+            <a href="cuenta.html" class="icon-link" aria-label="Cuenta de usuario">
+                🧑
+            </a>
+            <a href="carrito.html" class="icon-link" aria-label="Carrito de compras">
+                🛒 <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- MIGAS DE PAN -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <span><a href="index.html">Inicio</a></span>
+        <span>›</span>
+        <span>Tienda</span>
+    </nav>
+
+    <!-- INTRO TIENDA -->
+    <section class="shop-intro">
+        <h1>Tienda EcoMarket Chile</h1>
+        <p>
+            Explora nuestro catálogo de productos sustentables. Encuentra alternativas reutilizables,
+            biodegradables y de bajo impacto ambiental para tu día a día.
+        </p>
+    </section>
+
+    <!-- FILTROS / ORDEN -->
+    <section class="shop-filters">
+        <form class="shop-filters-form" action="tienda.html" method="get">
+            <div class="filter-group">
+                <label for="categoria">Categoría</label>
+                <select name="categoria" id="categoria">
+                    <option value="">Todas las categorías</option>
+                    <option value="cuidado-personal">Cuidado personal</option>
+                    <option value="hogar-limpieza">Hogar y limpieza</option>
+                    <option value="cocina-reutilizable">Cocina reutilizable</option>
+                    <option value="ofertas">Ofertas eco</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="precio">Rango de precio</label>
+                <select name="precio" id="precio">
+                    <option value="">Todos los precios</option>
+                    <option value="0-5000">$0 - $5.000</option>
+                    <option value="5000-10000">$5.000 - $10.000</option>
+                    <option value="10000-20000">$10.000 - $20.000</option>
+                    <option value="20000-mas">$20.000 o más</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="orden">Ordenar por</label>
+                <select name="orden" id="orden">
+                    <option value="relevancia">Relevancia</option>
+                    <option value="precio-menor">Precio: menor a mayor</option>
+                    <option value="precio-mayor">Precio: mayor a menor</option>
+                    <option value="nuevo">Más nuevos</option>
+                </select>
+            </div>
+
+            <div class="filter-actions">
+                <button type="submit" class="btn btn-primary">Aplicar filtros</button>
+            </div>
+        </form>
+
+        <div class="shop-results-info">
+            <span>Mostrando 1–8 de 32 productos</span>
+        </div>
+    </section>
+
+    <!-- LISTADO DE PRODUCTOS -->
+    <section class="shop-products">
+        <div class="products-grid">
+            <article class="product-card">
+                <img src="img/producto-1.jpg" alt="Cepillo de dientes de bambú">
+                <h3>Cepillo de dientes de bambú</h3>
+                <p class="product-tag">Biodegradable</p>
+                <p class="product-price">$3.990</p>
+                <p class="product-short">
+                    Mango de bambú y cerdas libres de BPA, ideal para reducir plásticos en tu baño.
+                </p>
+                <a href="detalle-producto-1.html" class="btn btn-outline">Ver detalles</a>
+                <button class="btn btn-primary">Añadir al carrito</button>
+            </article>
+
+            <article class="product-card">
+                <img src="img/producto-2.jpg" alt="Pack de bolsas reutilizables">
+                <h3>Pack bolsas reutilizables de algodón</h3>
+                <p class="product-tag">Reutilizable</p>
+                <p class="product-price">$7.490</p>
+                <p class="product-short">
+                    Set de bolsas de algodón orgánico para compras a granel y frutas y verduras.
+                </p>
+                <a href="detalle-producto-2.html" class="btn btn-outline">Ver detalles</a>
+                <button class="btn btn-primary">Añadir al carrito</button>
+            </article>
+
+            <article class="product-card">
+                <img src="img/producto-3.jpg" alt="Detergente ecológico concentrado">
+                <h3>Detergente ecológico concentrado</h3>
+                <p class="product-tag">Menos químicos</p>
+                <p class="product-price">$5.990</p>
+                <p class="product-short">
+                    Fórmula concentrada con tensoactivos de origen vegetal y menor impacto en el agua.
+                </p>
+                <a href="detalle-producto-3.html" class="btn btn-outline">Ver detalles</a>
+                <button class="btn btn-primary">Añadir al carrito</button>
+            </article>
+
+            <article class="product-card">
+                <img src="img/producto-4.jpg" alt="Botella de acero inoxidable">
+                <h3>Botella acero inoxidable 750 ml</h3>
+                <p class="product-tag">Reutilizable</p>
+                <p class="product-price">$12.990</p>
+                <p class="product-short">
+                    Mantiene la temperatura de tus bebidas y evita botellas plásticas desechables.
+                </p>
+                <a href="detalle-producto-4.html" class="btn btn-outline">Ver detalles</a>
+                <button class="btn btn-primary">Añadir al carrito</button>
+            </article>
+
+            <article class="product-card">
+                <img src="img/producto-5.jpg" alt="Esponjas vegetales">
+                <h3>Pack esponjas vegetales luffa</h3>
+                <p class="product-tag">Compostable</p>
+                <p class="product-price">$4.990</p>
+                <p class="product-short">
+                    Esponjas 100% vegetales, ideales para baño y cocina, compostables al final de su vida útil.
+                </p>
+                <a href="detalle-producto-5.html" class="btn btn-outline">Ver detalles</a>
+                <button class="btn btn-primary">Añadir al carrito</button>
+            </article>
+
+            <article class="product-card">
+                <img src="img/producto-6.jpg" alt="Toallas desmaquillantes reutilizables">
+                <h3>Toallas desmaquillantes reutilizables</h3>
+                <p class="product-tag">Zero Waste</p>
+                <p class="product-price">$6.990</p>
+                <p class="product-short">
+                    Toallas lavables que reemplazan algodones desechables, suaves con tu piel y el planeta.
+                </p>
+                <a href="detalle-producto-6.html" class="btn btn-outline">Ver detalles</a>
+                <button class="btn btn-primary">Añadir al carrito</button>
+            </article>
+
+            <article class="product-card">
+                <img src="img/producto-7.jpg" alt="Envases de vidrio herméticos">
+                <h3>Set envases de vidrio herméticos</h3>
+                <p class="product-tag">Reutilizable</p>
+                <p class="product-price">$13.990</p>
+                <p class="product-short">
+                    Envases de vidrio con tapa de bambú para almacenar alimentos sin plásticos.
+                </p>
+                <a href="detalle-producto-7.html" class="btn btn-outline">Ver detalles</a>
+                <button class="btn btn-primary">Añadir al carrito</button>
+            </article>
+
+            <article class="product-card">
+                <img src="img/producto-8.jpg" alt="Jabón sólido para cuerpo">
+                <h3>Jabón sólido natural para cuerpo</h3>
+                <p class="product-tag">Sin envase</p>
+                <p class="product-price">$3.490</p>
+                <p class="product-short">
+                    Jabón sólido con ingredientes naturales y sin envase plástico, ideal para reducir residuos.
+                </p>
+                <a href="detalle-producto-8.html" class="btn btn-outline">Ver detalles</a>
+                <button class="btn btn-primary">Añadir al carrito</button>
+            </article>
+        </div>
+
+        <div class="pagination">
+            <a href="#" class="page-link disabled">«</a>
+            <a href="#" class="page-link active">1</a>
+            <a href="#" class="page-link">2</a>
+            <a href="#" class="page-link">3</a>
+            <a href="#" class="page-link">»</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>EcoMarket Chile</h3>
+                <p>Productos sustentables para un hogar más consciente.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terminos.html">Términos y condiciones</a></li>
+                    <li><a href="privacidad.html">Política de privacidad</a></li>
+                    <li><a href="devoluciones.html">Política de devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>Correo: contacto@ecomarketchile.cl</p>
+                <p>Chile</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 EcoMarket Chile. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

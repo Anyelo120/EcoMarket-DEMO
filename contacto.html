@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto | EcoMarket Chile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Contacta a EcoMarket Chile para dudas sobre productos sustentables, pedidos y colaboraciones.">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html">EcoMarket <span>Chile</span></a>
+        </div>
+
+        <form class="search-bar" action="tienda.html" method="get">
+            <input type="text" name="q" placeholder="Buscar productos ecológicos...">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li class="has-submenu">
+                    <a href="categorias.html">Categorías</a>
+                    <ul class="submenu">
+                        <li><a href="categoria-cuidado-personal.html">Cuidado personal</a></li>
+                        <li><a href="categoria-hogar-limpieza.html">Hogar y limpieza</a></li>
+                        <li><a href="categoria-cocina.html">Cocina reutilizable</a></li>
+                        <li><a href="categoria-ofertas.html">Ofertas eco</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons">
+            <a href="cuenta.html" class="icon-link" aria-label="Cuenta de usuario">
+                🧑
+            </a>
+            <a href="carrito.html" class="icon-link" aria-label="Carrito de compras">
+                🛒 <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <span><a href="index.html">Inicio</a></span>
+        <span>›</span>
+        <span>Contacto</span>
+    </nav>
+
+    <section class="contact-hero">
+        <div class="contact-hero-inner">
+            <h1>Contacto</h1>
+            <p>
+                Si tienes dudas sobre productos, pedidos o propuestas de colaboración, escríbenos.
+                Te responderemos a la brevedad.
+            </p>
+        </div>
+    </section>
+
+    <main class="contact-main">
+        <section class="contact-layout">
+            <section class="contact-form-block">
+                <h2>Envíanos un mensaje</h2>
+                <p class="contact-form-text">
+                    Completa el siguiente formulario y cuéntanos en qué podemos ayudarte.
+                </p>
+
+                <form action="#" method="post" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" placeholder="Consulta, pedido, colaboración, etc." required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-row form-row-checkbox">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="acepto" required>
+                            <span>
+                                Acepto que mis datos sean utilizados para responder a mi consulta,
+                                de acuerdo con la Política de privacidad.
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </div>
+
+                    <p class="contact-confirmation">
+                        Una vez enviado el formulario, verás un mensaje de confirmación indicando que tus datos fueron guardados.
+                    </p>
+                </form>
+            </section>
+
+            <aside class="contact-info-block">
+                <h2>Otros canales de contacto</h2>
+                <p>
+                    También puedes escribirnos o seguir nuestras novedades en redes sociales.
+                </p>
+
+                <div class="contact-info-group">
+                    <h3>Correo</h3>
+                    <p><a href="mailto:contacto@ecomarketchile.cl">contacto@ecomarketchile.cl</a></p>
+                </div>
+
+                <div class="contact-info-group">
+                    <h3>Horario de atención</h3>
+                    <p>Lunes a viernes de 09:00 a 18:00 hrs (hora de Chile).</p>
+                </div>
+
+                <div class="contact-info-group">
+                    <h3>Redes sociales</h3>
+                    <div class="contact-social-links">
+                        <a href="#" aria-label="Instagram EcoMarket Chile">Instagram</a>
+                        <a href="#" aria-label="Facebook EcoMarket Chile">Facebook</a>
+                        <a href="#" aria-label="TikTok EcoMarket Chile">TikTok</a>
+                    </div>
+                </div>
+
+                <div class="contact-info-group">
+                    <h3>Ubicación de referencia</h3>
+                    <p>
+                        Operamos de forma online desde Chile. Si en el futuro contamos con punto físico de retiro,
+                        se informará en este mismo espacio.
+                    </p>
+                </div>
+
+                <div class="contact-map-placeholder">
+                    <p>Mapa de referencia (a integrar mediante el CMS o código embebido).</p>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>EcoMarket Chile</h3>
+                <p>Productos sustentables para un hogar más consciente.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terminos.html">Términos y condiciones</a></li>
+                    <li><a href="privacidad.html">Política de privacidad</a></li>
+                    <li><a href="devoluciones.html">Política de devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>Correo: contacto@ecomarketchile.cl</p>
+                <p>Chile</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 EcoMarket Chile. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

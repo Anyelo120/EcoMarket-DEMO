@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi cuenta | EcoMarket Chile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perfil de usuario de EcoMarket Chile. Revisa tus datos, pedidos y preferencias.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html">EcoMarket <span>Chile</span></a>
+        </div>
+
+        <form class="search-bar" action="tienda.html" method="get">
+            <input type="text" name="q" placeholder="Buscar productos ecológicos...">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li class="has-submenu">
+                    <a href="categorias.html">Categorías</a>
+                    <ul class="submenu">
+                        <li><a href="categoria-cuidado-personal.html">Cuidado personal</a></li>
+                        <li><a href="categoria-hogar-limpieza.html">Hogar y limpieza</a></li>
+                        <li><a href="categoria-cocina.html">Cocina reutilizable</a></li>
+                        <li><a href="categoria-ofertas.html">Ofertas eco</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons">
+            <a href="cuenta.html" class="icon-link" aria-label="Cuenta de usuario">
+                🧑
+            </a>
+            <a href="carrito.html" class="icon-link" aria-label="Carrito de compras">
+                🛒 <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <span><a href="index.html">Inicio</a></span>
+        <span>›</span>
+        <span>Mi cuenta</span>
+    </nav>
+
+    <main class="account-main">
+        <section class="account-layout">
+            <aside class="account-sidebar">
+                <div class="account-user-summary">
+                    <div class="account-avatar">
+                        <span>GP</span>
+                    </div>
+                    <div class="account-user-info">
+                        <p class="account-user-name">Nombre de usuario</p>
+                        <p class="account-user-email">correo@ejemplo.com</p>
+                    </div>
+                </div>
+
+                <nav class="account-nav">
+                    <h2>Mi panel</h2>
+                    <ul>
+                        <li><a href="#" class="active">Resumen</a></li>
+                        <li><a href="#">Mis pedidos</a></li>
+                        <li><a href="#">Direcciones</a></li>
+                        <li><a href="#">Datos de cuenta</a></li>
+                        <li><a href="#">Preferencias</a></li>
+                    </ul>
+                </nav>
+
+                <div class="account-logout">
+                    <a href="#" class="account-logout-link">Cerrar sesión</a>
+                </div>
+            </aside>
+
+            <section class="account-content">
+                <header class="account-header">
+                    <h1>Bienvenido(a) a tu cuenta</h1>
+                    <p>
+                        Desde aquí puedes revisar tus pedidos, actualizar tus datos y gestionar tus preferencias
+                        relacionadas con EcoMarket Chile.
+                    </p>
+                </header>
+
+                <section class="account-summary-cards">
+                    <article class="account-card">
+                        <h2>Pedidos realizados</h2>
+                        <p class="account-card-main">5</p>
+                        <p class="account-card-note">Últimos 12 meses</p>
+                    </article>
+                    <article class="account-card">
+                        <h2>Pedidos en curso</h2>
+                        <p class="account-card-main">1</p>
+                        <p class="account-card-note">En preparación o envío</p>
+                    </article>
+                    <article class="account-card">
+                        <h2>Direcciones guardadas</h2>
+                        <p class="account-card-main">2</p>
+                        <p class="account-card-note">Casa y trabajo, por ejemplo</p>
+                    </article>
+                </section>
+
+                <section class="account-last-order">
+                    <h2>Último pedido</h2>
+                    <div class="account-last-order-card">
+                        <div class="last-order-row">
+                            <p><strong>Número de pedido:</strong> ECO-2025-00123</p>
+                            <p><strong>Fecha:</strong> 05 de abril de 2025</p>
+                        </div>
+                        <div class="last-order-row">
+                            <p><strong>Estado:</strong> En preparación</p>
+                            <p><strong>Total:</strong> $24.960</p>
+                        </div>
+
+                        <div class="last-order-items">
+                            <div class="last-order-item">
+                                <span class="last-order-item-name">Cepillo de dientes de bambú</span>
+                                <span class="last-order-item-qty">x2</span>
+                            </div>
+                            <div class="last-order-item">
+                                <span class="last-order-item-name">Pack bolsas reutilizables de algodón</span>
+                                <span class="last-order-item-qty">x1</span>
+                            </div>
+                            <div class="last-order-item">
+                                <span class="last-order-item-name">Detergente ecológico concentrado</span>
+                                <span class="last-order-item-qty">x1</span>
+                            </div>
+                        </div>
+
+                        <div class="last-order-actions">
+                            <a href="#" class="btn btn-secondary">Ver detalle de pedido</a>
+                            <a href="tienda.html" class="btn btn-outline">Repetir compra</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="account-section">
+                    <h2>Datos de cuenta</h2>
+                    <div class="account-two-cols">
+                        <div class="account-field-block">
+                            <p class="account-field-label">Nombre</p>
+                            <p class="account-field-value">Nombre de usuario</p>
+                        </div>
+                        <div class="account-field-block">
+                            <p class="account-field-label">Correo electrónico</p>
+                            <p class="account-field-value">correo@ejemplo.com</p>
+                        </div>
+                        <div class="account-field-block">
+                            <p class="account-field-label">Fecha de registro</p>
+                            <p class="account-field-value">15 de marzo de 2025</p>
+                        </div>
+                        <div class="account-field-block">
+                            <p class="account-field-label">Suscripción a newsletter</p>
+                            <p class="account-field-value">Activa</p>
+                        </div>
+                    </div>
+
+                    <div class="account-section-actions">
+                        <a href="#" class="btn btn-secondary">Editar datos</a>
+                        <a href="#" class="btn btn-outline">Cambiar contraseña</a>
+                    </div>
+                </section>
+
+                <section class="account-section">
+                    <h2>Preferencias de comunicación</h2>
+                    <p class="account-section-text">
+                        Elige qué tipo de contenido deseas recibir relacionado con EcoMarket Chile.
+                    </p>
+
+                    <form action="#" method="post" class="account-preferences-form">
+                        <label class="account-pref-item">
+                            <input type="checkbox" checked>
+                            <span>Quiero recibir ofertas y descuentos exclusivos.</span>
+                        </label>
+                        <label class="account-pref-item">
+                            <input type="checkbox" checked>
+                            <span>Quiero recibir novedades sobre productos y categorías nuevas.</span>
+                        </label>
+                        <label class="account-pref-item">
+                            <input type="checkbox" checked>
+                            <span>Quiero recibir contenidos del blog (guías, consejos, ideas sustentables).</span>
+                        </label>
+                        <label class="account-pref-item">
+                            <input type="checkbox">
+                            <span>No deseo recibir comunicaciones comerciales.</span>
+                        </label>
+
+                        <button type="submit" class="btn btn-primary account-pref-save">
+                            Guardar preferencias
+                        </button>
+                    </form>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>EcoMarket Chile</h3>
+                <p>Productos sustentables para un hogar más consciente.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terminos.html">Términos y condiciones</a></li>
+                    <li><a href="privacidad.html">Política de privacidad</a></li>
+                    <li><a href="devoluciones.html">Política de devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>Correo: contacto@ecomarketchile.cl</p>
+                <p>Chile</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 EcoMarket Chile. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

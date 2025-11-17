@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoMarket Chile | Productos sustentables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EcoMarket Chile es tu tienda online de productos sustentables y ecológicos. Descubre un catálogo responsable con el medio ambiente.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER / NAV -->
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html">EcoMarket <span>Chile</span></a>
+        </div>
+
+        <form class="search-bar" action="tienda.html" method="get">
+            <input type="text" name="q" placeholder="Buscar productos ecológicos...">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li class="has-submenu">
+                    <a href="categorias.html">Categorías</a>
+                    <ul class="submenu">
+                        <li><a href="categoria-cuidado-personal.html">Cuidado personal</a></li>
+                        <li><a href="categoria-hogar-limpieza.html">Hogar y limpieza</a></li>
+                        <li><a href="categoria-cocina.html">Cocina reutilizable</a></li>
+                        <li><a href="categoria-ofertas.html">Ofertas eco</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons">
+            <a href="cuenta.html" class="icon-link" aria-label="Cuenta de usuario">
+                🧑
+            </a>
+            <a href="carrito.html" class="icon-link" aria-label="Carrito de compras">
+                🛒 <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO / BANNER PRINCIPAL -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>EcoMarket Chile: tu tienda de productos sustentables</h1>
+            <p>
+                Elige un consumo responsable sin renunciar a la comodidad. Descubre productos ecológicos pensados para cuidar tu hogar y el planeta.
+            </p>
+            <div class="hero-actions">
+                <a href="tienda.html" class="btn btn-primary">Ver catálogo ecológico</a>
+                <a href="#ofertas-semana" class="btn btn-secondary">Ofertas de la semana</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="img/hero-ecomarket.jpg" alt="Bolsas reutilizables y productos ecológicos">
+        </div>
+    </section>
+
+    <!-- BENEFICIOS / PROPUESTA DE VALOR -->
+    <section class="benefits">
+        <h2>¿Por qué EcoMarket Chile?</h2>
+        <div class="benefits-grid">
+            <article class="benefit-card">
+                <h3>Menos plástico, más planeta</h3>
+                <p>Seleccionamos productos que ayudan a reducir residuos y envases de un solo uso.</p>
+            </article>
+            <article class="benefit-card">
+                <h3>Selección responsable</h3>
+                <p>Cuidamos el origen, materiales y procesos de cada artículo del catálogo.</p>
+            </article>
+            <article class="benefit-card">
+                <h3>Envíos responsables</h3>
+                <p>Priorizamos empaques reutilizables o reciclables para minimizar el impacto.</p>
+            </article>
+            <article class="benefit-card">
+                <h3>Compra simple y segura</h3>
+                <p>Una experiencia de compra clara, rápida y enfocada en lo que realmente necesitas.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- CATEGORÍAS DESTACADAS -->
+    <section class="categories-highlight">
+        <h2>Categorías destacadas</h2>
+        <div class="categories-grid">
+            <a href="categoria-cuidado-personal.html" class="category-card">
+                <img src="img/cuidado-personal.jpg" alt="Productos de cuidado personal ecológicos">
+                <div class="category-info">
+                    <h3>Cuidado personal</h3>
+                    <p>Higiene y bienestar con impacto reducido.</p>
+                </div>
+            </a>
+            <a href="categoria-hogar-limpieza.html" class="category-card">
+                <img src="img/hogar-limpieza.jpg" alt="Productos de limpieza ecológicos para el hogar">
+                <div class="category-info">
+                    <h3>Hogar y limpieza</h3>
+                    <p>Cuida tu casa y el planeta al mismo tiempo.</p>
+                </div>
+            </a>
+            <a href="categoria-cocina.html" class="category-card">
+                <img src="img/cocina-reutilizable.jpg" alt="Utensilios de cocina reutilizables">
+                <div class="category-info">
+                    <h3>Cocina reutilizable</h3>
+                    <p>Alternativas duraderas a lo desechable.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS / OFERTAS -->
+    <section class="featured-products" id="ofertas-semana">
+        <div class="section-header">
+            <h2>Ofertas de la semana</h2>
+            <a href="tienda.html" class="link-see-all">Ver todos los productos</a>
+        </div>
+        <div class="products-grid">
+            <!-- Producto 1 -->
+            <article class="product-card">
+                <img src="img/producto-1.jpg" alt="Cepillo de bambú">
+                <h3>Cepillo de dientes de bambú</h3>
+                <p class="product-tag">Biodegradable</p>
+                <p class="product-price">$3.990</p>
+                <a href="detalle-producto-1.html" class="btn btn-outline">Ver detalles</a>
+                <button class="btn btn-primary">Añadir al carrito</button>
+            </article>
+
+            <!-- Producto 2 -->
+            <article class="product-card">
+                <img src="img/producto-2.jpg" alt="Bolsa reutilizable de tela">
+                <h3>Pack bolsas reutilizables</h3>
+                <p class="product-tag">Reutilizable</p>
+                <p class="product-price">$7.490</p>
+                <a href="detalle-producto-2.html" class="btn btn-outline">Ver detalles</a>
+                <button class="btn btn-primary">Añadir al carrito</button>
+            </article>
+
+            <!-- Producto 3 -->
+            <article class="product-card">
+                <img src="img/producto-3.jpg" alt="Detergente ecológico">
+                <h3>Detergente ecológico concentrado</h3>
+                <p class="product-tag">Menos químicos</p>
+                <p class="product-price">$5.990</p>
+                <a href="detalle-producto-3.html" class="btn btn-outline">Ver detalles</a>
+                <button class="btn btn-primary">Añadir al carrito</button>
+            </article>
+
+            <!-- Producto 4 -->
+            <article class="product-card">
+                <img src="img/producto-4.jpg" alt="Botella de acero inoxidable">
+                <h3>Botella acero inoxidable 750ml</h3>
+                <p class="product-tag">Reutilizable</p>
+                <p class="product-price">$12.990</p>
+                <a href="detalle-producto-4.html" class="btn btn-outline">Ver detalles</a>
+                <button class="btn btn-primary">Añadir al carrito</button>
+            </article>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTENIDO EDUCATIVO / MICRO LANDING -->
+    <section class="eco-tips">
+        <div class="eco-tips-content">
+            <h2>Empieza hoy a consumir de forma más ecológica</h2>
+            <p>
+                Pequeños cambios en tu rutina pueden generar un impacto positivo en el entorno. Cambiar productos
+                de un solo uso por alternativas reutilizables, preferir materiales reciclables y apoyar proyectos
+                responsables son pasos concretos hacia un consumo más sostenible.
+            </p>
+            <a href="blog-articulo-guia-consumo-ecologico.html" class="btn btn-secondary">
+                Leer guía de consumo responsable
+            </a>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonials-grid">
+            <article class="testimonial-card">
+                <p>“Desde que compro en EcoMarket Chile disminuí mucho los plásticos en mi casa.”</p>
+                <span>- Camila, Santiago</span>
+            </article>
+            <article class="testimonial-card">
+                <p>“Los productos llegan rápido y bien empaquetados, sin plástico innecesario.”</p>
+                <span>- José, Valparaíso</span>
+            </article>
+            <article class="testimonial-card">
+                <p>“Me encantan las ideas del blog para reutilizar y reciclar en el día a día.”</p>
+                <span>- Daniela, Concepción</span>
+            </article>
+        </div>
+    </section>
+
+    <!-- SUSCRIPCIÓN / MARKETING DIGITAL -->
+    <section class="newsletter">
+        <div class="newsletter-inner">
+            <h2>Recibe descuentos y tips ecológicos</h2>
+            <p>Suscríbete a nuestro boletín y entérate primero de nuevas ofertas y contenidos.</p>
+            <form action="#" method="post" class="newsletter-form">
+                <input type="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                <button type="submit" class="btn btn-primary">Suscribirme</button>
+            </form>
+            <small>Al suscribirte aceptas recibir comunicaciones de EcoMarket Chile. Tus datos serán tratados de forma responsable.</small>
+        </div>
+    </section>
+
+    <!-- BLOQUE REDES SOCIALES -->
+    <section class="social-section">
+        <h2>Síguenos en redes sociales</h2>
+        <p>Descubre más ideas sustentables, novedades y detrás de cámaras.</p>
+        <div class="social-links">
+            <a href="#" aria-label="Instagram EcoMarket Chile">Instagram</a>
+            <a href="#" aria-label="Facebook EcoMarket Chile">Facebook</a>
+            <a href="#" aria-label="TikTok EcoMarket Chile">TikTok</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>EcoMarket Chile</h3>
+                <p>Productos sustentables para un hogar más consciente.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terminos.html">Términos y condiciones</a></li>
+                    <li><a href="privacidad.html">Política de privacidad</a></li>
+                    <li><a href="devoluciones.html">Política de devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>Correo: contacto@ecomarketchile.cl</p>
+                <p>Chile</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 EcoMarket Chile. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
